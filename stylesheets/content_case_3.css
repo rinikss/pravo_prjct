@@ -12,8 +12,9 @@
 }
 
 #screen-1.case_3 .character {
-  width: 34.3vw;
-  height: 27.5vw;
+  top: 8.6vw;
+  width: 34vw;
+  height: 32vw;
 }
 
 #screen-1.case_3 .text_field {
