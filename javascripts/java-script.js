@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const textEl = document.getElementById(textId);
     if (!textEl) return;
 
+    fullText = textEl.dataset.fulltext || fullText;
+
     const arrowHit = arrowHitId ? document.getElementById(arrowHitId) : null;
     const characterEl = characterSelector
       ? document.querySelector(characterSelector)

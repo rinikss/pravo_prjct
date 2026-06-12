@@ -276,7 +276,7 @@ body {
 
 .nbc_text {
   flex: 1;
-  color: #1a1208;
+  color: #ffffff;
   font-size: 2.6vw;
   font-weight: 800;
   line-height: 1.5;
@@ -445,6 +445,7 @@ body {
   display: inline-block;
 }
 
+/* ---------- Экран 5: разбор кейса ---------- */
 .result_screen {
   display: flex;
   flex-direction: column;
@@ -507,7 +508,7 @@ body {
   background-color: #c4721c;
   color: #ffffff;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.2vw;
   text-decoration: none;
   border-radius: 0.3vw;

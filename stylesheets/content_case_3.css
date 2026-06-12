@@ -1,0 +1,38 @@
+.case_1.case_3 .accent_bar {
+  background-color: #3a5aaa;
+}
+
+.case_1.case_3 .corner {
+  background-color: #3a5aaa;
+  opacity: 70%;
+}
+
+.case_1.case_3::after {
+  box-shadow: inset 0 0 0 0.4vw rgba(58, 90, 170, 0.22);
+}
+
+#screen-1.case_3 .character {
+  width: 34.306vw;
+  height: 30.347vw;
+}
+
+#screen-1.case_3 .text_field {
+  font-size: 1.3vw;
+}
+
+.case_1.case_3 .nbc_box {
+  background-color: rgba(122, 24, 24, 0.5);
+  background-image: none;
+}
+
+.case_1.case_3 .nbc_logo_wrap::before {
+  background: radial-gradient(
+    circle,
+    rgba(122, 24, 24, 0.55) 0%,
+    rgba(122, 24, 24, 0) 70%
+  );
+}
+#screen-2.case_3 .character {
+  margin-left: -5vw;
+  margin-top: 4vw;
+}
