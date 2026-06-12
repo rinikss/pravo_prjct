@@ -1,0 +1,22 @@
+/* ---------- Тема кейса 2 ---------- */
+
+.case_1.case_2 {
+  background-color: #100c1c;
+}
+
+.case_1.case_2 .accent_bar {
+  background-color: #b02868;
+}
+
+.case_1.case_2 .corner {
+  background-color: #b02868;
+  opacity: 70%;
+}
+
+.case_1.case_2::after {
+  box-shadow: inset 0 0 0 0.4vw rgba(176, 40, 104, 0.22);
+}
+
+.case_1.case_2 .text_field {
+  border: 0.15vw solid rgba(176, 40, 104, 0.15);
+}

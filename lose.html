@@ -3,36 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Кейс 1 — Молчание как ложь</title>
+    <title>Кейс 1 — Проигрыш</title>
     <link rel="icon" href="./images/favicon.png" />
     <link href="./stylesheets/fonts.css" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" />
+
     <script src="javascripts/java-script.js" charset="utf-8" defer></script>
   </head>
   <body>
-    <section class="case_1" id="screen-1">
+    <section class="case_1 lose_screen" id="screen-3">
       <div class="accent_bar"></div>
       <div class="corner tl"></div>
       <div class="corner tr"></div>
       <div class="corner bl"></div>
       <div class="corner br"></div>
-      <img class="sunset" src="./images/sunset.png" alt="" />
 
-      <div class="text_field">
-        <span class="text-content" id="textContent"></span>
-        <a
-          class="next-arrow-hit"
-          id="nextArrowHit"
-          href="question.html"
-          aria-disabled="true"
-        >
-          <div class="next-arrow" id="nextArrow"></div>
-        </a>
+      <div class="lose_frame">
+        <div class="character3">
+          <img class="bro3 bro3_frame_a" src="./images/bro_11.svg" alt="" />
+          <img class="bro3 bro3_frame_b" src="./images/bro_111.svg" alt="" />
+        </div>
       </div>
 
-      <div class="character">
-        <img class="bro_1 bro_frame_a" src="./images/bro_1.svg" alt="" />
-        <img class="bro_1 bro_frame_b" src="./images/bro_11.svg" alt="" />
+      <p class="lose_caption">Ты поверил. А не стоило.</p>
+
+      <div class="text_field">
+        <span class="text-content" id="textContent3"></span>
+        <a
+          class="next-arrow-hit"
+          id="nextArrowHit3"
+          href="result.html"
+          aria-disabled="true"
+        >
+          <div class="next-arrow" id="nextArrow3"></div>
+        </a>
       </div>
     </section>
   </body>
