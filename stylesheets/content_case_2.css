@@ -17,26 +17,11 @@
 
 .case_1.case_2 .text_field {
   border: 0.15vw solid rgba(176, 40, 104, 0.15);
-}
-.case_1.case_2 {
-  background-color: #100c1c;
+  font-size: 1.25vw;
 }
 
-.case_1.case_2 .accent_bar {
-  background-color: #b02868;
-}
-
-.case_1.case_2 .corner {
-  background-color: #b02868;
-  opacity: 70%;
-}
-
-.case_1.case_2::after {
-  box-shadow: inset 0 0 0 0.4vw rgba(176, 40, 104, 0.22);
-}
-
-.case_1.case_2 .text_field {
-  border: 0.15vw solid rgba(176, 40, 104, 0.15);
+#screen-1.case_2 .character {
+  top: 11vw;
 }
 
 .case_1.case_2 .nbc_box {
@@ -56,20 +41,12 @@
 .case_1.case_2 .nbc_text {
   color: #fdeaf2;
 }
-#screen-2.case_2 .character {
-  margin-left: -6vw; /* свои значения */
-  margin-top: 4vw;
-  width: 40vw;
-  height: 50vw;
-}
 
 .case_1.case_2.lose_screen,
-.case_1.case_2.lose_screen {
+.case_1.case_2.lose_screen .text_field {
   background-color: #280909;
 }
-.text_field {
-  background-color: #1a0808;
-}
+
 .case_1.case_2.win_screen {
   background-color: #0c1f0c;
 }

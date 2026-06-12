@@ -12,12 +12,16 @@
 }
 
 #screen-1.case_3 .character {
-  width: 34.306vw;
-  height: 30.347vw;
+  width: 34.3vw;
+  height: 27.5vw;
 }
 
 #screen-1.case_3 .text_field {
-  font-size: 1.3vw;
+  font-size: 1.15vw;
+}
+
+.case_1.case_3.lose_screen .text_field {
+  font-size: 1.25vw;
 }
 
 .case_1.case_3 .nbc_box {
@@ -31,11 +35,4 @@
     rgba(122, 24, 24, 0.55) 0%,
     rgba(122, 24, 24, 0) 70%
   );
-}
-#screen-2.case_3 .character {
-  margin-left: -5vw;
-  margin-top: 4vw;
-}
-.case_1.case_3.lose_screen .text_field {
-  padding: 0 1.6vw 0.2vw;
 }

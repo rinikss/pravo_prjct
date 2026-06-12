@@ -14,7 +14,7 @@ body {
 .case_1 {
   position: relative;
   width: 100%;
-  height: 64vw;
+  height: 58vw;
   background-color: #0c1b2c;
 }
 
@@ -22,14 +22,16 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 0 0 0.4vw #342e28;
+  box-shadow: inset 0 0 0 0.4vw rgba(196, 114, 28, 0.22);
   pointer-events: none;
   z-index: 5;
 }
 .accent_bar {
+  position: relative;
   width: 100%;
-  height: 2vw;
+  height: 1.8125vw;
   background-color: #c4721c;
+  z-index: 6;
 }
 
 .corner {
@@ -37,15 +39,15 @@ body {
   width: 0.8vw;
   height: 0.8vw;
   background-color: #c4721c;
-  opacity: 40%;
+  opacity: 70%;
   z-index: 10;
 }
 .tl {
-  top: 2vw;
+  top: 1.8vw;
   left: 0;
 }
 .tr {
-  top: 2vw;
+  top: 1.8vw;
   right: 0;
 }
 .bl {
@@ -59,18 +61,18 @@ body {
 .sunset {
   position: relative;
   margin-left: 3.2vw;
-  margin-top: 2vw;
+  margin-top: 1.8vw;
   width: 93vw;
-  height: 39vw;
+  height: 35.3vw;
 }
 
 .text_field {
   position: relative;
   background-color: #0a1828;
   margin-left: 3.2vw;
-  margin-top: 2vw;
+  margin-top: 1.8vw;
   width: 93vw;
-  height: 16vw;
+  height: 14.5vw;
   padding: 1.2vw 1.6vw;
   color: #ffffff;
   font-size: 1.4vw;
@@ -103,7 +105,7 @@ body {
   bottom: 0;
   right: 0;
   width: 4vw;
-  height: 4vw;
+  height: 3.6vw;
   cursor: pointer;
   z-index: 20;
   display: block;
@@ -119,9 +121,9 @@ body {
   right: 1.2vw;
   width: 0;
   height: 0;
-  border-left: 1.1vw solid transparent;
-  border-right: 1.1vw solid transparent;
-  border-top: 1.4vw solid #ffffff;
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-top: 1vw solid #ffffff;
   cursor: pointer;
   opacity: 0;
   filter: drop-shadow(0 0 0.4vw #ffffff) drop-shadow(0 0 0.8vw #ffd27a);
@@ -146,13 +148,12 @@ body {
   }
 }
 
-/* ---------- Экран 1: персонаж ---------- */
 #screen-1 .character {
   position: absolute;
   left: 7.8vw;
-  top: 10vw;
-  width: 32vw;
-  height: 33vw;
+  top: 8vw;
+  width: 35vw;
+  height: 32vw;
   pointer-events: none;
 }
 
@@ -178,8 +179,6 @@ body {
   opacity: 1;
 }
 
-/* ---------- Экран 2: вопрос игроку ---------- */
-
 .question_screen {
   position: relative;
   overflow: hidden;
@@ -194,10 +193,10 @@ body {
 
 #screen-2 .character {
   position: relative;
-  margin-left: -8vw;
-  margin-top: 4vw;
+  margin-left: -5vw;
+  margin-top: 3.6vw;
   width: 40vw;
-  height: 50vw;
+  height: 45.3vw;
 }
 
 #screen-2 .bro {
@@ -226,18 +225,18 @@ body {
   position: absolute;
   top: 0;
   width: 68vw;
-  height: 63.6vw;
+  height: 57.638vw;
   margin-left: 31.6vw;
   background-color: #060f1c;
   display: flex;
   flex-direction: column;
-  padding: 4vw 2vw 2vw;
-  gap: 1.6vw;
+  padding: 3.625vw 2vw 1.8125vw;
+  gap: 1.45vw;
 }
 
 .nbc_box {
   height: 75%;
-  margin-top: 2vw;
+  margin-top: 1.8125vw;
   flex: 1;
   display: flex;
   align-items: center;
@@ -285,7 +284,7 @@ body {
 .answers_row {
   display: flex;
   gap: 1.6vw;
-  height: 9.07vw;
+  height: 8.222vw;
 }
 
 .answer_btn {
@@ -329,9 +328,9 @@ body {
 
 .lose_frame {
   position: relative;
-  margin: 2vw 3.2vw 0;
+  margin: 1.8vw 3.2vw 0;
   width: 93vw;
-  height: 41.6vw;
+  height: 37.7vw;
   background-color: #3a1410;
   display: flex;
   align-items: center;
@@ -340,8 +339,9 @@ body {
 
 .character3 {
   position: relative;
-  width: 34vw;
+  width: 36vw;
   height: 34vw;
+  margin-top: 2vw;
 }
 
 .bro3 {
@@ -367,13 +367,13 @@ body {
 }
 
 .lose_caption {
-  margin: 1.6vw 3.2vw 1.2vw;
+  margin: 1.45vw 3.2vw 1.0875vw;
   color: #c0392b;
   font-weight: 800;
   font-size: 1.6vw;
   text-align: center;
   border-bottom: 0.15vw solid #c0392b;
-  padding-bottom: 1.6vw;
+  padding-bottom: 1.45vw;
 }
 
 .lose_screen .text_field {
@@ -381,6 +381,11 @@ body {
   margin: 0 3.2vw;
   flex: 1;
   height: auto;
+  padding-top: 0.4vw;
+}
+
+.lose_screen .next-arrow {
+  bottom: 1.4vw;
 }
 
 /* ---------- Экран 4: выигрыш ---------- */
@@ -400,9 +405,9 @@ body {
 
 .win_frame {
   position: relative;
-  margin: 2vw 3.2vw 0;
+  margin: 1.8vw 3.2vw 0;
   width: 93vw;
-  height: 41.6vw;
+  height: 37.7vw;
   background-color: #1e4d1e;
   display: flex;
   align-items: center;
@@ -410,8 +415,9 @@ body {
 }
 
 .bro_win {
-  width: 26.1vw;
-  height: 39.5vw;
+  margin-top: 2vw;
+  width: 36vw;
+  height: 34vw;
   object-fit: contain;
 }
 
@@ -421,8 +427,8 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 1.6vw;
-  margin: 1.6vw 3.2vw 0;
+  padding-top: 1.45vw;
+  margin: 1.45vw 3.2vw 0;
   border-top: 0.15vw solid #3a8a3a;
   color: #3a8a3a;
   font-weight: 700;
@@ -460,8 +466,8 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6vw;
-  margin: 2vw 3.2vw 0;
-  height: 8vw;
+  margin: 1.8125vw 3.2vw 0;
+  height: 7.25vw;
   background-color: #16233a;
   padding: 0 2vw;
 }
@@ -480,7 +486,7 @@ body {
 .result_body {
   flex: 1;
   display: flex;
-  margin: 1.6vw 3.2vw 2vw;
+  margin: 1.45vw 3.2vw 1.8125vw;
   gap: 0;
 }
 
@@ -492,12 +498,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.6vw;
+  gap: 1.45vw;
 }
 
 .result_image {
   width: 18vw;
-  height: 18vw;
+  height: 16.3125vw;
   object-fit: contain;
   filter: drop-shadow(0 0 1.2vw rgba(255, 220, 100, 0.55))
     drop-shadow(0 0 2.4vw rgba(255, 220, 100, 0.35));
@@ -524,7 +530,7 @@ body {
   flex: 1;
   background-color: #1a2b48;
   color: #e3ecf7;
-  font-size: 1.4vw;
+  font-size: 1.7vw;
   line-height: 1.7;
   padding: 2vw 2.4vw;
 }
