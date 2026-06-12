@@ -3,10 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>неймиег</title>
+    <title>КЕЙС 1 – МОЛЧАНИЕ КАК ЛОЖЬ</title>
     <link rel="icon" href="./images/favicon.png" />
     <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" />
     <script src="javascripts/java-script.js" charset="utf-8"></script>
   </head>
-  <body></body>
+  <body>
+    <section class="case_1" id="screen-1">
+      <div class="accent_bar"></div>
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+      <img class="sunset" src="./images/sunset.png" alt="" />
+      <div class="text_field">
+        <span class="text_content" id="textContent"></span>
+        <div class="next_arrow" id="nextArrow"></div>
+      </div>
+
+      <div class="character">
+        <img class="bro_1 bro_frame_a" src="./images/bro_1.svg" alt="" />
+        <img class="bro_1 bro_frame_b" src="./images/bro_11.svg" alt="" />
+      </div>
+    </section>
+
+    <section class="case_1 question_screen" id="screen-2">
+      <div class="accent_bar"></div>
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
+
+      <div class="character">
+        <img class="bro" src="./images/bro_1.svg" alt="" />
+      </div>
+      <div class="question_body">
+        <div class="nbc_box">
+          <div class="nbc_logo_wrap">
+            <img class="nbc_logo" src="./images/NBS.png" alt="" />
+          </div>
+          <p class="nbc_text">
+            Ты веришь, что настоящий журналист должен рисковать жизнью, чтобы
+            донести правду? Я здесь, чтобы рассказать тебе всё как есть.
+          </p>
+        </div>
+        <div class="answers_row">
+          <button class="answer_btn answer_red" data-choice="doubt">
+            Подожди. Что-то в этой истории не сходится
+          </button>
+          <button class="answer_btn answer_green" data-choice="believe">
+            Да, верю тебе. Ты настоящий герой-репортёр
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
