@@ -419,8 +419,9 @@ body {
   position: relative;
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: 1.6vw;
   margin: 1.6vw 3.2vw 0;
   border-top: 0.15vw solid #3a8a3a;
   color: #3a8a3a;

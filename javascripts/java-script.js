@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // клик по тексту — мгновенно завершить печать
     const textField = textEl.closest(".text_field, .nbc_box, p");
     if (textField) {
       textField.addEventListener("click", () => {
@@ -70,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
 
-    // клик по стрелке, пока текст не допечатан — тоже мгновенно завершить
     if (arrowHit) {
       arrowHit.addEventListener("click", (e) => {
         if (!textEl.classList.contains("done")) {
@@ -84,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
     type();
   }
 
-  // ---------- Экран 1 (index.html) ----------
   setupTypingScreen({
     textId: "textContent",
     fullText:
@@ -93,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
     arrowHitId: "nextArrowHit",
   });
 
-  // ---------- Экран 2 (question.html) ----------
   setupTypingScreen({
     textId: "textContent2",
     fullText:
@@ -101,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
     characterSelector: ".character",
   });
 
-  // ---------- Экран 3 (lose.html) ----------
   setupTypingScreen({
     textId: "textContent3",
     fullText:
